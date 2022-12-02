@@ -17,11 +17,14 @@
   <button color="accent" mat-raised-button>Accent</button>&nbsp;&nbsp;&nbsp;
   <button color="warn" mat-raised-button>Warn</button>&nbsp;&nbsp;&nbsp;
 </div>
-<!-- class n°4 - Typography -->
-<hr>
-<h1>Typography</h1>
-<hr>
-<div class="mat-display-4">Display 4</div>
-<div class="mat-display-3">Display 3</div>
-<div class="mat-display-2">Display 2</div>
-<div class="mat-display-1">Display 1</div>
+<div>
+  <mat-button-toggle #toggleBtn>This one can be Toggled on and off + IS IT TOGGLED?</mat-button-toggle>
+  {{ toggleBtn.checked }} <br>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="Angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="React">React</mat-button-toggle>
+    <mat-button-toggle value="Vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
+</div>
+
