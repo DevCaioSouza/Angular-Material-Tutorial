@@ -1,0 +1,7 @@
+.matSpinnerClass{
+  text-align: center;
+}
+
+.matSpinnerClass > mat-spinner{
+  margin: 20px auto;
+}
