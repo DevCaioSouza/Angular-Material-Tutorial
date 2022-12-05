@@ -46,14 +46,34 @@
 <hr>
 
 <div>
-  <span matBadge="5">Notifications</span>
+  <span [matBadge]="notifications" [matBadgeHidden]="notifications === 0">Notifications</span>
+  <p>Hidden Badge</p>
 </div><br>
 <div>
-  <span matBadge="5" matBadgePosition="below before">Notifications</span>
+  <span [matBadge]="notifications" matBadgePosition="below before">Notifications matBadgePosition="below before"</span>
 </div><br>
 <div>
-  <span matBadge="5" matBadgePosition="below after">Notifications</span>
+  <span [matBadge]="notifications" matBadgePosition="below after">Notifications</span>
 </div><br>
 <div>
   <span matBadge="5" matBadgePosition="above before">Notifications</span>
-</div>
+</div><br>
+<div>
+  <span matBadge="5" matBadgeSize="small">Notifications</span>
+</div><br>
+<div>
+  <span matBadge="5" matBadgeSize="medium">Notifications matBadgeSize="medium"</span>
+</div><br>
+<div>
+  <span matBadge="5" matBadgeSize="large">Notifications</span>
+</div><br>
+<div>
+  <span matBadge="5" matBadgeColor="primary">Notifications matBadgeColor="primary"</span>
+</div><br>
+<div>
+  <span matBadge="5" matBadgeColor="accent">Notifications matBadgeColor="accent"</span>
+</div><br>
+<div>
+  <span matBadge="5" matBadgeColor="warn" matBadgeOverlap="false">Notifications - matBadgeOverlap="false"</span>
+</div><br>
+
