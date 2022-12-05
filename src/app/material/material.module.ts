@@ -4,7 +4,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
-import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
+
 
 
 const MaterialComponents = [
@@ -13,7 +15,8 @@ const MaterialComponents = [
   MatFormFieldModule,
   MatSelectModule,
   MatButtonToggleModule,
-  MatIconModule
+  MatIconModule,
+  MatBadgeModule
 ]
 
 @NgModule({
